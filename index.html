@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{
+         margin: 25px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-size: 17px;
+         text-align: center;
+      }
+      table{
+         size: 15px;
+         border: none;
+         text-align: center;
+
+         /* box-shadow: 1px 1px 1px 1px rgb(221, 221, 221); */
+         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+         /* hide empty-cells: ; */
+         /* margin: 10px; */
+         /* border-bottom: 1px solid #333; */
+      }
+      @media only screen and (max-width: 1000px){
+         body{
+            flex-direction: column;
+         }
+         table{
+            flex-direction: column;
+         }
+      }
+      /* td,th{
+         width: 25%;
+      } */
+      .th1 th,td{
+         width: 25%;
+
+      }
+      .td1 th{
+         width: 40%;
+      }
+      table:hover{
+         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+      tr{
+         /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+      }
+   </style>
+</head>
+<body>
+   <div class="th1">
+      <div class="td1"></div>
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
